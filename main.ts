@@ -19,6 +19,14 @@ input.onButtonPressed(Button.A, function () {
     if (2 == micro_object) {
         music.playTone(392, music.beat(BeatFraction.Double))
         basic.showIcon(IconNames.Yes)
+    } else if (0 == micro_object) {
+        basic.showLeds(`
+            . . . . .
+            # # # # #
+            . . . . .
+            # # # # #
+            . . . . .
+            `)
     } else {
         music.playTone(185, music.beat(BeatFraction.Whole))
         basic.showIcon(IconNames.No)
@@ -30,6 +38,14 @@ input.onButtonPressed(Button.AB, function () {
     if (1 == micro_object) {
         music.playTone(392, music.beat(BeatFraction.Double))
         basic.showIcon(IconNames.Yes)
+    } else if (2 == micro_object) {
+        basic.showLeds(`
+            . . . . .
+            # # # # #
+            . . . . .
+            # # # # #
+            . . . . .
+            `)
     } else {
         music.playTone(185, music.beat(BeatFraction.Whole))
         basic.showIcon(IconNames.No)
@@ -41,6 +57,14 @@ input.onButtonPressed(Button.B, function () {
     if (0 == micro_object) {
         music.playTone(392, music.beat(BeatFraction.Double))
         basic.showIcon(IconNames.Yes)
+    } else if (1 == micro_object) {
+        basic.showLeds(`
+            . . . . .
+            # # # # #
+            . . . . .
+            # # # # #
+            . . . . .
+            `)
     } else {
         music.playTone(185, music.beat(BeatFraction.Whole))
         basic.showIcon(IconNames.No)
